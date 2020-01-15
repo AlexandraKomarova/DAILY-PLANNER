@@ -35,3 +35,47 @@ $("#2-pm .todo-text").val(localStorage.getItem("2-pm"));
 $("#3-pm .todo-text").val(localStorage.getItem("3-pm"));
 $("#4-pm .todo-text").val(localStorage.getItem("4-pm"));
 $("#5-pm .todo-text").val(localStorage.getItem("5-pm"));
+
+
+var moment = moment();
+
+console.log(moment.toString());
+
+console.log(moment.format("dddd"));
+
+console.log(moment.format("D"))
+
+console.log(moment.format("MMMM"))
+
+console.log(moment.format("YYYY"))
+
+console.log(moment.format("H"))
+
+console.log(moment.format("X"))
+
+console.log(moment.valueOf());
+
+console.log(moment.unix());
+
+var present = moment.startOf('hour');
+console.log(present)
+
+console.log(JSON.stringify(moment))
+
+
+
+$(".date").text(moment.format("D"))
+$(".weekday").text(moment.format("dddd"))
+$(".month-and-year").text(moment.format("MMMM YYYY"))
+
+var currentHour = moment.format("H")
+// var pastHour = moment.diff(moment(), "hours")
+console.log(typeof currentHour)
+// console.log(pastHour)
+
+var hourNumber = parseInt(currentHour)
+console.log(hourNumber)
+
+$(".to-do-div").each(function(){
+  console.log($(this).children(".time").data("index"))
+})

@@ -7,10 +7,10 @@
     <title>DAILY PLANNER</title>
     <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="style.css">
-    <script
-  src="https://code.jquery.com/jquery-3.4.1.min.js"
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
   crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.js"></script>
 </head>
 <body>
     <header>
@@ -25,7 +25,7 @@
     </header>
     <main>
         <div class="to-do-div" id="9-am">
-            <div class="time">9 am</div>
+            <div class="time" data-index="9">9 am</div>
             <input type="text" name="todo-text" class="todo-text"/>
             <button type="submit" value="save" class="submit">
                 <img src="https://img.icons8.com/ios/50/000000/save.png" class="save-btn">

@@ -38,7 +38,7 @@ main {
 }
 
 .to-do-div {
-    height: 50px;
+    height: 40px;
     display: flex;
     margin: 1%;
 }
@@ -77,11 +77,12 @@ main {
     border: none;
     background: none;
     
+    padding-bottom: 25px;
 }
 
 .submit img {
-    width: 95%;
-    padding-bottom: 3px;
+    max-height: 40px;
+    
 }
 
 .submit:hover {
