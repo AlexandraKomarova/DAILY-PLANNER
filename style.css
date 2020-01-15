@@ -23,9 +23,13 @@ header {
 }
 
 .decoration {
-    background: url(image.jpg);
+    /* background: url(image.jpg);
     background-repeat: repeat;
-    background-size: auto 100%;
+    background-size: auto 100%; */
+    background: #ffffff; /* Old browsers */
+	background: -moz-linear-gradient(-5deg, #ffffff 0%, #ffffff 50%, black 50%, black 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(-5deg, #ffffff 0%,#ffffff 50%,black 50%,black 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(117deg, #ffffff 0%,#ffffff 50%,black 50%,black 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 
 main {
@@ -38,6 +42,7 @@ main {
     display: flex;
     margin: 1%;
 }
+    
 
 .time {
     width: 13%;
@@ -64,11 +69,19 @@ main {
 
 .submit {
     width: 7%;
+    
     margin-left: 2%;
-    border: 1px solid black;
-    border-radius: 3px;
+    /* border: 1px solid black;
+    border-radius: 3px; */
     font-size: 15px;
+    border: none;
     background: none;
+    
+}
+
+.submit img {
+    width: 95%;
+    padding-bottom: 3px;
 }
 
 .submit:hover {
