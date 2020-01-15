@@ -5,72 +5,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>DAILY PLANNER</title>
-    <link href="https://fonts.googleapis.com/css?family=Zilla+Slab&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="style.css">
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="page">
-        <h1>WORK DAY SCHEDULER</h1>
-       
-        <h3>A simple calendar app for scheduling your work day</h3>
-        <h3>Today's date is January 13th</h3>
-        <form class="to-do">
-            <div class="time">9.00 am</div>
-            <input type="text" class="to-do-field">
-            <input type="submit" value="save" id="submit">
-        </form> 
-    
-        <form class="to-do">
-            <div class="time">10.00 am</div>
-            <input type="text" class="to-do-field">
-            <input type="submit" value="save" id="submit">
-        </form> 
-        <form class="to-do">
-            <div class="time">10.00 am</div>
-            <input type="text" class="to-do-field">
-            <input type="submit" value="save" id="submit">
-        </form> 
-        <form class="to-do">
-            <div class="time">11.00 am</div>
-            <input type="text" class="to-do-field">
-            <input type="submit" value="save" id="submit">
-        </form> 
-        <form class="to-do">
-            <div class="time">12.00 pm</div>
-            <input type="text" class="to-do-field">
-            <input type="submit" value="save" id="submit">
-        </form> 
-        <form class="to-do">
-            <div class="time">1.00 pm</div>
-            <input type="text" class="to-do-field">
-            <input type="submit" value="save" id="submit">
-        </form> 
-        <form class="to-do">
-            <div class="time">1.00 pm</div>
-            <input type="text" class="to-do-field">
-            <input type="submit" value="save" id="submit">
-        </form> 
-        <form class="to-do">
-            <div class="time">2.00 pm</div>
-            <input type="text" class="to-do-field">
-            <input type="submit" value="save" id="submit">
-        </form> 
-        <form class="to-do">
-            <div class="time">3.00 pm</div>
-            <input type="text" class="to-do-field">
-            <input type="submit" value="save" id="submit">
-        </form> 
-        <form class="to-do">
-            <div class="time">4.00 pm</div>
-            <input type="text" class="to-do-field">
-            <input type="submit" value="save" id="submit">
-        </form>
-        <form class="to-do">
-            <div class="time">5.00 pm</div>
-            <input type="text" class="to-do-field">
-            <input type="submit" value="save" id="submit">
-        </form>  
-    </div>
+    <header>
+        <div class="date-div">
+            <div class="date">14</div>
+        </div>
+        <div class="weekday-month-year">
+            <div class="weekday">Monday</div>
+            <div class="month-and-year">January 2020</div>
+        </div>
+        <div class="decoration"></div>
+    </header>
+    <main>
+        <div class="to-do-div" id="9-am">
+            <div class="time">9 am</div>
+            <input type="text" name="todo-text" class="todo-text"/>
+            <button type="submit" value="save" class="submit">save</button>
+        </div>
+        <div class="to-do-div" id="10-am">
+            <div class="time">10 am</div>
+            <input type="text" name="todo-text" class="todo-text"/>
+            <button type="submit" value="save" class="submit">save</button>
+        </div>
+        <div class="to-do-div" id="11-am">
+            <div class="time">11 am</div>
+            <input type="text" name="todo-text" class="todo-text"/>
+            <button type="submit" value="save" class="submit">save</button>
+        </div>
+        <div class="to-do-div" id="12-pm">
+            <div class="time">12 pm</div>
+            <input type="text" name="todo-text" class="todo-text"/>
+            <button type="submit" value="save" class="submit">save</button>
+        </div>
+        <div class="to-do-div" id="1-pm">
+            <div class="time">1 pm</div>
+            <input type="text" name="todo-text" class="todo-text"/>
+            <button type="submit" value="save" class="submit">save</button>
+        </div>
+        <div class="to-do-div" id="2-pm">
+            <div class="time">2 pm</div>
+            <input type="text" name="todo-text" class="todo-text"/>
+            <button type="submit" value="save" class="submit">save</button>
+        </div>
+        <div class="to-do-div" id="3-pm">
+            <div class="time">3 pm</div>
+            <input type="text" name="todo-text" class="todo-text"/>
+            <button type="submit" value="save" class="submit">save</button>
+        </div>
+        <div class="to-do-div" id="4-pm">
+            <div class="time">4 pm</div>
+            <input type="text" name="todo-text" class="todo-text"/>
+            <button type="submit" value="save" class="submit">save</button>
+        </div>
+        <div class="to-do-div" id="5-pm">
+            <div class="time">5 pm</div>
+            <input type="text" name="todo-text" class="todo-text"/>
+            <button type="submit" value="save" class="submit">save</button>
+        </div>
+    </main>
     <script src="script.js"></script>
 </body>
 </html>
