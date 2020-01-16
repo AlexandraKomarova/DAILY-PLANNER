@@ -18,12 +18,12 @@ $(document).ready(function() {
   });
 });
 
-$( ".submit" ).mouseover(function() {
-  $(".save-btn").attr("src", "https://img.icons8.com/ios-filled/50/000000/save.png")
+$(".submit").mouseover(function() {
+  $(this).children().attr("src", "https://img.icons8.com/ios-filled/50/000000/save.png")
 });
 
 $( ".submit" ).mouseout(function() {
-  $(".save-btn").attr("src", "https://img.icons8.com/ios/50/000000/save.png")
+  $(this).children().attr("src", "https://img.icons8.com/ios/50/000000/save.png")
 });
 
 $("#9-am .todo-text").val(localStorage.getItem("9-am"));
