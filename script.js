@@ -67,31 +67,33 @@ console.log(typeof currentHour)
 var currentHourNumber = parseInt(currentHour)
 console.log(currentHourNumber)
 
-var timeDataIndex = 0;
+
 
 $(".to-do-div").each(function(){
-  timeDataIndex = $(this).children(".time").data("index")
-  // console.log(timeDataIndex)
+  var timeDataIndex = $(this).children(".time").data("index")
+  var timeDataIndexNumber = parseInt(timeDataIndex)
+  console.log(timeDataIndexNumber)
+  var displayTime = $(".time");
+
+  if(timeDataIndexNumber > currentHourNumber){
+    console.log("future!")
+    $(this).children(".time").css({"color": "green"})
+  }
+
+  if(timeDataIndexNumber < currentHourNumber){
+    console.log("past!")
+    $(this).children(".time").css({"color": "grey"})
+  }
+
+  if(timeDataIndexNumber === currentHourNumber){
+    console.log("present!")
+    $(this).children(".time").css({"color": "black"})
+  }
 })
 
-console.log(timeDataIndex)
 
-var displayTime = $(".time");
 
-if(currentHourNumber < timeDataIndex){
-  console.log("future!")
-  displayTime.css({"color": "green"})
-}
 
-if(currentHourNumber > timeDataIndex){
-  console.log("past!")
-  displayTime.css({"color": "grey"})
-}
-
-if(currentHourNumber === timeDataIndex){
-  console.log("present!")
-  displayTime.css({"color": "black"})
-}
 
 
 
