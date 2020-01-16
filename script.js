@@ -80,12 +80,19 @@ var displayTime = $(".time");
 
 if(currentHourNumber < timeDataIndex){
   console.log("future!")
-  
+  displayTime.css({"color": "green"})
 }
 
 if(currentHourNumber > timeDataIndex){
   console.log("past!")
   displayTime.css({"color": "grey"})
 }
+
+if(currentHourNumber === timeDataIndex){
+  console.log("present!")
+  displayTime.css({"color": "black"})
+}
+
+
 
 
