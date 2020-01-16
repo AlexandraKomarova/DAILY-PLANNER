@@ -1,11 +1,4 @@
-$(document).ready(function() {
-  var todoDiv = document.querySelector(".to-do-div");
-  var todoInput = document.querySelector("#todo-text");
-  var submit = document.querySelector(".submit")
-
-  var todos = []
-
-  $(".submit").on("click", function(){
+$(".submit").on("click", function(){
     //console.log($(this).siblings('.todo-text').val());
     //console.log($(this).parent().attr('id'));
 
@@ -16,7 +9,6 @@ $(document).ready(function() {
 
     console.log(localStorage);
   });
-});
 
 $(".submit").mouseover(function() {
   $(this).children().attr("src", "https://img.icons8.com/ios-filled/50/000000/save.png")
@@ -35,7 +27,6 @@ $("#2-pm .todo-text").val(localStorage.getItem("2-pm"));
 $("#3-pm .todo-text").val(localStorage.getItem("3-pm"));
 $("#4-pm .todo-text").val(localStorage.getItem("4-pm"));
 $("#5-pm .todo-text").val(localStorage.getItem("5-pm"));
-
 
 var moment = moment();
 
@@ -73,9 +64,28 @@ var currentHour = moment.format("H")
 console.log(typeof currentHour)
 // console.log(pastHour)
 
-var hourNumber = parseInt(currentHour)
-console.log(hourNumber)
+var currentHourNumber = parseInt(currentHour)
+console.log(currentHourNumber)
+
+var timeDataIndex = 0;
 
 $(".to-do-div").each(function(){
-  console.log($(this).children(".time").data("index"))
+  timeDataIndex = $(this).children(".time").data("index")
+  // console.log(timeDataIndex)
 })
+
+console.log(timeDataIndex)
+
+var displayTime = $(".time");
+
+if(currentHourNumber < timeDataIndex){
+  console.log("future!")
+  
+}
+
+if(currentHourNumber > timeDataIndex){
+  console.log("past!")
+  displayTime.css({"color": "grey"})
+}
+
+
